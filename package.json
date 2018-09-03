@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "JavaScript development environment ",
   "scripts": {
-  "prestart":"babel-node buildScripts/startMessage.js",
-   "start":"npm-run-all --parallel security-check open:src",
-   "open:src":"node buildScripts/srcServer.js",
-   "security-check":"nsp check",
-   "localtunnel":"lt --port 8000",
-   "share:":"npm-run-all --parallel open:src localtunnel"
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 8000",
+    "share:": "npm-run-all --parallel open:src localtunnel"
   },
   "author": "Bahaa Amasha",
   "license": "MIT",
@@ -50,5 +50,14 @@
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
     "webpack-md5-hash": "0.0.5"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahaa82/StarterKit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bahaa82/StarterKit/issues"
+  },
+  "homepage": "https://github.com/bahaa82/StarterKit#readme"
 }
